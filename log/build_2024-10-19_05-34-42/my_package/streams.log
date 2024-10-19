@@ -1,0 +1,50 @@
+[0.017s] Invoking command in '/home/user/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/services_pkg:/home/simulations/ros2_sims_ws/install/parameter_tests:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/build/my_package -- -j8 -l8
+[0.041s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.178s] -- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)
+[0.210s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.213s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.219s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.230s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.246s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.308s] -- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.309s] -- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.455s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.616s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.683s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.683s] -- Configured cppcheck include dirs: 
+[0.684s] -- Configured cppcheck exclude dirs and/or files: 
+[0.685s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.685s] -- Added test 'lint_cmake' to check CMake code style
+[0.686s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.686s] -- Added test 'uncrustify' to check C / C++ code style
+[0.687s] -- Configured uncrustify additional arguments: 
+[0.687s] -- Added test 'xmllint' to check XML markup files
+[0.688s] -- Configuring done
+[0.698s] -- Generating done
+[0.700s] -- Build files have been written to: /home/user/ros2_ws/build/my_package
+[0.733s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_node.dir/src/simple.cpp.o[0m
+[10.921s] [100%] [32m[1mLinking CXX executable simple_node[0m
+[11.031s] [100%] Built target simple_node
+[11.040s] Invoked command in '/home/user/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/services_pkg:/home/simulations/ros2_sims_ws/install/parameter_tests:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/build/my_package -- -j8 -l8
+[11.078s] Invoking command in '/home/user/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/services_pkg:/home/simulations/ros2_sims_ws/install/parameter_tests:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/build/my_package
+[11.083s] -- Install configuration: ""
+[11.084s] -- Installing: /home/user/ros2_ws/install/my_package/lib/my_package/simple_node
+[11.084s] -- Set runtime path of "/home/user/ros2_ws/install/my_package/lib/my_package/simple_node" to ""
+[11.084s] -- Installing: /home/user/ros2_ws/install/my_package/share/my_package//launch
+[11.085s] -- Installing: /home/user/ros2_ws/install/my_package/share/my_package//launch/my_package_launch_file.launch.py
+[11.085s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[11.085s] -- Installing: /home/user/ros2_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[11.085s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[11.085s] -- Installing: /home/user/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[11.086s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/environment/path.sh
+[11.086s] -- Installing: /home/user/ros2_ws/install/my_package/share/my_package/environment/path.dsv
+[11.086s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/local_setup.bash
+[11.086s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/local_setup.sh
+[11.086s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/local_setup.zsh
+[11.086s] -- Installing: /home/user/ros2_ws/install/my_package/share/my_package/local_setup.dsv
+[11.087s] -- Installing: /home/user/ros2_ws/install/my_package/share/my_package/package.dsv
+[11.088s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[11.089s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[11.090s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[11.090s] -- Up-to-date: /home/user/ros2_ws/install/my_package/share/my_package/package.xml
+[11.091s] Invoked command in '/home/user/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/simulations/ros2_sims_ws/install/services_pkg:/home/simulations/ros2_sims_ws/install/parameter_tests:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/build/my_package

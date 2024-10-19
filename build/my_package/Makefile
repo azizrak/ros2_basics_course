@@ -197,6 +197,43 @@ my_package_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_package_uninstall.dir/build.make CMakeFiles/my_package_uninstall.dir/build
 .PHONY : my_package_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named simple_node
+
+# Build rule for target.
+simple_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_node
+.PHONY : simple_node
+
+# fast build rule for target.
+simple_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_node.dir/build.make CMakeFiles/simple_node.dir/build
+.PHONY : simple_node/fast
+
+src/simple.o: src/simple.cpp.o
+.PHONY : src/simple.o
+
+# target to build an object file
+src/simple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_node.dir/build.make CMakeFiles/simple_node.dir/src/simple.cpp.o
+.PHONY : src/simple.cpp.o
+
+src/simple.i: src/simple.cpp.i
+.PHONY : src/simple.i
+
+# target to preprocess a source file
+src/simple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_node.dir/build.make CMakeFiles/simple_node.dir/src/simple.cpp.i
+.PHONY : src/simple.cpp.i
+
+src/simple.s: src/simple.cpp.s
+.PHONY : src/simple.s
+
+# target to generate assembly for a file
+src/simple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_node.dir/build.make CMakeFiles/simple_node.dir/src/simple.cpp.s
+.PHONY : src/simple.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... my_package_uninstall"
 	@echo "... uninstall"
+	@echo "... simple_node"
+	@echo "... src/simple.o"
+	@echo "... src/simple.i"
+	@echo "... src/simple.s"
 .PHONY : help
 
 

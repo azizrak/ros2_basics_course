@@ -1,3 +1,5 @@
+/home/user/ros2_ws/install/my_package/lib/my_package/simple_node
+/home/user/ros2_ws/install/my_package/share/my_package//launch/my_package_launch_file.launch.py
 /home/user/ros2_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
 /home/user/ros2_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
 /home/user/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
