@@ -1,0 +1,12 @@
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In constructor '[01m[KBotNode::BotNode(float)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:25:9:[m[K [01;31m[Kerror: [m[K'[01m[Ktimer1_[m[K' was not declared in this scope; did you mean '[01m[Ktimer1[m[K'?
+   25 |         [01;31m[Ktimer1_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Ktimer1[m[K
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In member function '[01m[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:32:65:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kmsg[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   32 |     void bot1_callback([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K){
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

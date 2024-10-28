@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.003075] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003163] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003285] (executors_exercises_pkg) JobQueued: {'identifier': 'executors_exercises_pkg', 'dependencies': OrderedDict()}
+[0.003316] (executors_exercises_pkg) JobStarted: {'identifier': 'executors_exercises_pkg'}
+[0.057645] (executors_exercises_pkg) JobProgress: {'identifier': 'executors_exercises_pkg', 'progress': 'cmake'}
+[0.058311] (executors_exercises_pkg) JobProgress: {'identifier': 'executors_exercises_pkg', 'progress': 'build'}
+[0.059089] (executors_exercises_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_ws/src/build/executors_exercises_pkg', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_ws/src/build/executors_exercises_pkg', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://1_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '1_xterm'), ('PWD', '/home/user/ros2_ws/src/build/executors_exercises_pkg'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LANG', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/user/ros2_ws/src/install/my_package:/home/user/ros2_ws/src/install/executors_exercises_pkg:/home/simulations/ros2_sims_ws/install/box_bot_tutorials:/home/simulations/ros2_sims_ws/install/box_bot_gazebo:/home/simulations/ros2_sims_ws/install/box_bot_description:/home/simulations/ros2_sims_ws/install/animated_actors:/home/user/ros2_ws/install/my_package:/home/user/ros2_ws/install/executors_exercises_pkg:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_ws/src/install/my_package:/home/user/ros2_ws/src/install/executors_exercises_pkg:/home/simulations/ros2_sims_ws/install/box_bot_tutorials:/home/simulations/ros2_sims_ws/install/box_bot_gazebo:/home/simulations/ros2_sims_ws/install/box_bot_description:/home/simulations/ros2_sims_ws/install/animated_actors:/home/user/ros2_ws/install/my_package:/home/user/ros2_ws/install/executors_exercises_pkg:/opt/ros/humble'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/src/install:/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '1_xterm'), ('_colcon_cd_root', '/home/user/ros2_ws'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://1_xterm:11311'), ('ROS_HOSTNAME', '1_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '0'), ('SLOT_PREFIX', '915a92a9-c935-4dfa-a469-e5cedb162867'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25156'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin'), ('SELECTED_ROS_DISTRO', 'humble'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin'), ('NODE_VERSION', 'v8.17.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'humble'), ('GAZEBO_VERBOSE', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros2_ws'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20001'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099564] (-) TimerEvent: {}
+[0.189006] (executors_exercises_pkg) StdoutLine: {'line': b'[ 10%] Built target executor_example_5_node\n'}
+[0.189680] (executors_exercises_pkg) StdoutLine: {'line': b'[ 20%] Built target executor_example_1_node\n'}
+[0.190015] (executors_exercises_pkg) StdoutLine: {'line': b'[ 30%] Built target executor_example_3_node\n'}
+[0.193088] (executors_exercises_pkg) StdoutLine: {'line': b'[ 40%] Built target executor_example_2_node\n'}
+[0.196863] (executors_exercises_pkg) StdoutLine: {'line': b'[ 50%] Built target executor_example_4_node\n'}
+[0.199652] (-) TimerEvent: {}
+[0.204666] (executors_exercises_pkg) StdoutLine: {'line': b'[ 60%] Built target executor_example_5_reentrant_node\n'}
+[0.212381] (executors_exercises_pkg) StdoutLine: {'line': b'[ 70%] Built target executor_example_4_singlethreaded_node\n'}
+[0.216645] (executors_exercises_pkg) StdoutLine: {'line': b'[ 80%] Built target executor_example_5_mutualyexclusive_node\n'}
+[0.232903] (executors_exercises_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target bot_node\x1b[0m\n'}
+[0.257186] (executors_exercises_pkg) StdoutLine: {'line': b'[ 90%] Built target executor_example_5_mutualyexclusive_multiple_node\n'}
+[0.257502] (executors_exercises_pkg) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o\x1b[0m\n'}
+[0.299778] (-) TimerEvent: {}
+[0.400095] (-) TimerEvent: {}
+[0.500423] (-) TimerEvent: {}
+[0.600850] (-) TimerEvent: {}
+[0.701862] (-) TimerEvent: {}
+[0.802841] (-) TimerEvent: {}
+[0.904804] (-) TimerEvent: {}
+[1.005141] (-) TimerEvent: {}
+[1.105557] (-) TimerEvent: {}
+[1.205889] (-) TimerEvent: {}
+[1.306276] (-) TimerEvent: {}
+[1.406748] (-) TimerEvent: {}
+[1.507192] (-) TimerEvent: {}
+[1.607607] (-) TimerEvent: {}
+[1.708660] (-) TimerEvent: {}
+[1.811140] (-) TimerEvent: {}
+[1.911459] (-) TimerEvent: {}
+[2.011778] (-) TimerEvent: {}
+[2.112165] (-) TimerEvent: {}
+[2.212514] (-) TimerEvent: {}
+[2.312896] (-) TimerEvent: {}
+[2.413210] (-) TimerEvent: {}
+[2.513537] (-) TimerEvent: {}
+[2.613968] (-) TimerEvent: {}
+[2.714342] (-) TimerEvent: {}
+[2.814697] (-) TimerEvent: {}
+[2.915100] (-) TimerEvent: {}
+[3.015493] (-) TimerEvent: {}
+[3.115821] (-) TimerEvent: {}
+[3.216214] (-) TimerEvent: {}
+[3.316613] (-) TimerEvent: {}
+[3.417030] (-) TimerEvent: {}
+[3.517414] (-) TimerEvent: {}
+[3.618014] (-) TimerEvent: {}
+[3.719109] (-) TimerEvent: {}
+[3.819971] (-) TimerEvent: {}
+[3.921298] (-) TimerEvent: {}
+[4.022120] (-) TimerEvent: {}
+[4.122452] (-) TimerEvent: {}
+[4.222875] (-) TimerEvent: {}
+[4.323369] (-) TimerEvent: {}
+[4.423748] (-) TimerEvent: {}
+[4.524618] (-) TimerEvent: {}
+[4.624934] (-) TimerEvent: {}
+[4.725274] (-) TimerEvent: {}
+[4.825674] (-) TimerEvent: {}
+[4.926436] (-) TimerEvent: {}
+[5.027170] (-) TimerEvent: {}
+[5.127487] (-) TimerEvent: {}
+[5.227831] (-) TimerEvent: {}
+[5.328185] (-) TimerEvent: {}
+[5.428915] (-) TimerEvent: {}
+[5.529300] (-) TimerEvent: {}
+[5.629634] (-) TimerEvent: {}
+[5.730703] (-) TimerEvent: {}
+[5.831100] (-) TimerEvent: {}
+[5.931499] (-) TimerEvent: {}
+[6.031895] (-) TimerEvent: {}
+[6.132232] (-) TimerEvent: {}
+[6.232620] (-) TimerEvent: {}
+[6.333363] (-) TimerEvent: {}
+[6.434267] (-) TimerEvent: {}
+[6.534668] (-) TimerEvent: {}
+[6.635109] (-) TimerEvent: {}
+[6.735529] (-) TimerEvent: {}
+[6.835990] (-) TimerEvent: {}
+[6.936865] (-) TimerEvent: {}
+[7.037250] (-) TimerEvent: {}
+[7.137573] (-) TimerEvent: {}
+[7.237901] (-) TimerEvent: {}
+[7.338264] (-) TimerEvent: {}
+[7.438950] (-) TimerEvent: {}
+[7.539344] (-) TimerEvent: {}
+[7.639663] (-) TimerEvent: {}
+[7.739994] (-) TimerEvent: {}
+[7.840364] (-) TimerEvent: {}
+[7.940689] (-) TimerEvent: {}
+[8.041101] (-) TimerEvent: {}
+[8.141458] (-) TimerEvent: {}
+[8.241868] (-) TimerEvent: {}
+[8.342957] (-) TimerEvent: {}
+[8.443375] (-) TimerEvent: {}
+[8.543771] (-) TimerEvent: {}
+[8.644489] (-) TimerEvent: {}
+[8.745387] (-) TimerEvent: {}
+[8.845740] (-) TimerEvent: {}
+[8.946065] (-) TimerEvent: {}
+[9.046554] (-) TimerEvent: {}
+[9.147249] (-) TimerEvent: {}
+[9.247671] (-) TimerEvent: {}
+[9.348067] (-) TimerEvent: {}
+[9.448686] (-) TimerEvent: {}
+[9.549007] (-) TimerEvent: {}
+[9.649347] (-) TimerEvent: {}
+[9.750234] (-) TimerEvent: {}
+[9.850627] (-) TimerEvent: {}
+[9.951321] (-) TimerEvent: {}
+[10.051727] (-) TimerEvent: {}
+[10.152035] (-) TimerEvent: {}
+[10.252377] (-) TimerEvent: {}
+[10.353284] (-) TimerEvent: {}
+[10.453703] (-) TimerEvent: {}
+[10.554114] (-) TimerEvent: {}
+[10.654536] (-) TimerEvent: {}
+[10.754959] (-) TimerEvent: {}
+[10.855338] (-) TimerEvent: {}
+[10.955717] (-) TimerEvent: {}
+[11.056467] (-) TimerEvent: {}
+[11.157975] (-) TimerEvent: {}
+[11.258981] (-) TimerEvent: {}
+[11.359353] (-) TimerEvent: {}
+[11.459719] (-) TimerEvent: {}
+[11.561110] (-) TimerEvent: {}
+[11.661465] (-) TimerEvent: {}
+[11.761846] (-) TimerEvent: {}
+[11.862190] (-) TimerEvent: {}
+[11.962569] (-) TimerEvent: {}
+[12.062922] (-) TimerEvent: {}
+[12.163353] (-) TimerEvent: {}
+[12.263749] (-) TimerEvent: {}
+[12.364084] (-) TimerEvent: {}
+[12.464448] (-) TimerEvent: {}
+[12.564797] (-) TimerEvent: {}
+[12.665222] (-) TimerEvent: {}
+[12.765916] (-) TimerEvent: {}
+[12.790389] (executors_exercises_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bot_node\x1b[0m\n'}
+[12.866049] (-) TimerEvent: {}
+[12.966435] (-) TimerEvent: {}
+[13.066842] (-) TimerEvent: {}
+[13.167256] (-) TimerEvent: {}
+[13.267659] (-) TimerEvent: {}
+[13.270710] (executors_exercises_pkg) StdoutLine: {'line': b'[100%] Built target bot_node\n'}
+[13.285030] (executors_exercises_pkg) CommandEnded: {'returncode': 0}
+[13.367772] (-) TimerEvent: {}
+[13.422720] (executors_exercises_pkg) JobProgress: {'identifier': 'executors_exercises_pkg', 'progress': 'install'}
+[13.436237] (executors_exercises_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_ws/src/build/executors_exercises_pkg'], 'cwd': '/home/user/ros2_ws/src/build/executors_exercises_pkg', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://1_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '1_xterm'), ('PWD', '/home/user/ros2_ws/src/build/executors_exercises_pkg'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LANG', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/user/ros2_ws/src/install/my_package:/home/user/ros2_ws/src/install/executors_exercises_pkg:/home/simulations/ros2_sims_ws/install/box_bot_tutorials:/home/simulations/ros2_sims_ws/install/box_bot_gazebo:/home/simulations/ros2_sims_ws/install/box_bot_description:/home/simulations/ros2_sims_ws/install/animated_actors:/home/user/ros2_ws/install/my_package:/home/user/ros2_ws/install/executors_exercises_pkg:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_ws/src/install/my_package:/home/user/ros2_ws/src/install/executors_exercises_pkg:/home/simulations/ros2_sims_ws/install/box_bot_tutorials:/home/simulations/ros2_sims_ws/install/box_bot_gazebo:/home/simulations/ros2_sims_ws/install/box_bot_description:/home/simulations/ros2_sims_ws/install/animated_actors:/home/user/ros2_ws/install/my_package:/home/user/ros2_ws/install/executors_exercises_pkg:/opt/ros/humble'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/src/install:/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '1_xterm'), ('_colcon_cd_root', '/home/user/ros2_ws'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://1_xterm:11311'), ('ROS_HOSTNAME', '1_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '0'), ('SLOT_PREFIX', '915a92a9-c935-4dfa-a469-e5cedb162867'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25156'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin'), ('SELECTED_ROS_DISTRO', 'humble'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin'), ('NODE_VERSION', 'v8.17.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'humble'), ('GAZEBO_VERBOSE', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros2_ws'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20001'), ('_', '/usr/bin/env')]), 'shell': False}
+[13.454645] (executors_exercises_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.455065] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_1_node\n'}
+[13.455423] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_2_node\n'}
+[13.455904] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_3_node\n'}
+[13.456381] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_4_node\n'}
+[13.456630] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_4_singlethreaded_node\n'}
+[13.456919] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_node\n'}
+[13.457337] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_reentrant_node\n'}
+[13.458005] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_mutualyexclusive_node\n'}
+[13.458956] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_mutualyexclusive_multiple_node\n'}
+[13.459635] (executors_exercises_pkg) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/bot_node\n'}
+[13.467925] (executors_exercises_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/bot_node" to ""\n'}
+[13.468116] (-) TimerEvent: {}
+[13.468308] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/ament_index/resource_index/package_run_dependencies/executors_exercises_pkg\n'}
+[13.468526] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/ament_index/resource_index/parent_prefix_path/executors_exercises_pkg\n'}
+[13.468665] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/ament_prefix_path.sh\n'}
+[13.468907] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/ament_prefix_path.dsv\n'}
+[13.469044] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/path.sh\n'}
+[13.469163] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/path.dsv\n'}
+[13.469278] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.bash\n'}
+[13.469361] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.sh\n'}
+[13.469477] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.zsh\n'}
+[13.469604] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.dsv\n'}
+[13.469729] (executors_exercises_pkg) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/package.dsv\n'}
+[13.469831] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/ament_index/resource_index/packages/executors_exercises_pkg\n'}
+[13.469933] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/cmake/executors_exercises_pkgConfig.cmake\n'}
+[13.470077] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/cmake/executors_exercises_pkgConfig-version.cmake\n'}
+[13.470583] (executors_exercises_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/package.xml\n'}
+[13.471957] (executors_exercises_pkg) CommandEnded: {'returncode': 0}
+[13.568254] (-) TimerEvent: {}
+[13.670349] (-) TimerEvent: {}
+[13.680839] (executors_exercises_pkg) JobEnded: {'identifier': 'executors_exercises_pkg', 'rc': 0}
+[13.681703] (-) EventReactorShutdown: {}

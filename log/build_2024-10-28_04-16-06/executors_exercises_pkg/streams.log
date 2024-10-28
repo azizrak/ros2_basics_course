@@ -1,0 +1,58 @@
+[0.041s] Invoking command in '/home/user/ros2_ws/src/build/executors_exercises_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/executors_exercises_pkg -- -j8 -l8
+[0.140s] [ 10%] Built target executor_example_2_node
+[0.142s] [ 20%] Built target executor_example_1_node
+[0.143s] [ 30%] Built target executor_example_4_node
+[0.148s] [ 40%] Built target executor_example_4_singlethreaded_node
+[0.151s] [ 50%] Built target executor_example_5_node
+[0.154s] [ 60%] Built target executor_example_5_reentrant_node
+[0.173s] [ 70%] Built target executor_example_3_node
+[0.186s] [35m[1mConsolidate compiler generated dependencies of target bot_node[0m
+[0.193s] [ 80%] Built target executor_example_5_mutualyexclusive_node
+[0.203s] [ 90%] Built target executor_example_5_mutualyexclusive_multiple_node
+[0.211s] [ 95%] [32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o[0m
+[3.539s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In member function '[01m[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K':
+[3.539s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:32:65:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kmsg[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.539s]    32 | [01;35m[Knav_msgs::msg::Odometry::SharedPtr msg[m[K){
+[3.539s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.539s] 
+[13.262s] [100%] [32m[1mLinking CXX executable bot_node[0m
+[14.392s] [100%] Built target bot_node
+[14.403s] Invoked command in '/home/user/ros2_ws/src/build/executors_exercises_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/executors_exercises_pkg -- -j8 -l8
+[14.556s] Invoking command in '/home/user/ros2_ws/src/build/executors_exercises_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/build/executors_exercises_pkg
+[14.566s] -- Install configuration: ""
+[14.576s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_1_node
+[14.577s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_1_node" to ""
+[14.578s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_2_node
+[14.584s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_2_node" to ""
+[14.585s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_3_node
+[14.595s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_3_node" to ""
+[14.595s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_4_node
+[14.600s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_4_node" to ""
+[14.600s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_4_singlethreaded_node
+[14.605s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_4_singlethreaded_node" to ""
+[14.606s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_node
+[14.606s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_node" to ""
+[14.607s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_reentrant_node
+[14.607s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_reentrant_node" to ""
+[14.607s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_mutualyexclusive_node
+[14.608s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_mutualyexclusive_node" to ""
+[14.608s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_mutualyexclusive_multiple_node
+[14.609s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/executor_example_5_mutualyexclusive_multiple_node" to ""
+[14.609s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/bot_node
+[14.613s] -- Set runtime path of "/home/user/ros2_ws/src/install/executors_exercises_pkg/lib/executors_exercises_pkg/bot_node" to ""
+[14.614s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/ament_index/resource_index/package_run_dependencies/executors_exercises_pkg
+[14.614s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/ament_index/resource_index/parent_prefix_path/executors_exercises_pkg
+[14.615s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/ament_prefix_path.sh
+[14.617s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/ament_prefix_path.dsv
+[14.617s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/path.sh
+[14.618s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/environment/path.dsv
+[14.618s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.bash
+[14.618s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.sh
+[14.618s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.zsh
+[14.618s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/local_setup.dsv
+[14.619s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/package.dsv
+[14.619s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/ament_index/resource_index/packages/executors_exercises_pkg
+[14.620s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/cmake/executors_exercises_pkgConfig.cmake
+[14.620s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/cmake/executors_exercises_pkgConfig-version.cmake
+[14.621s] -- Installing: /home/user/ros2_ws/src/install/executors_exercises_pkg/share/executors_exercises_pkg/package.xml
+[14.622s] Invoked command in '/home/user/ros2_ws/src/build/executors_exercises_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/build/executors_exercises_pkg

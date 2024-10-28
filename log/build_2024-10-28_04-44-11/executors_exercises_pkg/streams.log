@@ -1,0 +1,26 @@
+[0.052s] Invoking command in '/home/user/ros2_ws/src/build/executors_exercises_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/executors_exercises_pkg -- -j8 -l8
+[0.182s] [ 10%] Built target executor_example_2_node
+[0.185s] [ 20%] Built target executor_example_4_node
+[0.186s] [ 30%] Built target executor_example_4_singlethreaded_node
+[0.187s] [ 40%] Built target executor_example_1_node
+[0.190s] [ 50%] Built target executor_example_3_node
+[0.192s] [ 60%] Built target executor_example_5_node
+[0.193s] [ 70%] Built target executor_example_5_reentrant_node
+[0.208s] [ 80%] Built target executor_example_5_mutualyexclusive_node
+[0.208s] [35m[1mConsolidate compiler generated dependencies of target bot_node[0m
+[0.225s] [ 90%] Built target executor_example_5_mutualyexclusive_multiple_node
+[0.243s] [ 95%] [32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o[0m
+[3.431s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+[3.431s]                  from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:1[m[K:
+[3.432s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In member function '[01m[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K':
+[3.432s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:37:60:[m[K [01;31m[Kerror: [m[Kinvalid operands of types '[01m[Kconst char [17][m[K' and '[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_x_type[m[K' {aka '[01m[Kdouble[m[K'} to binary '[01m[Koperator+[m[K'
+[3.432s]    37 |         RCLCPP_INFO(this->get_logger(), [32m[K"Bot 1 Position: "[m[K [01;31m[K+[m[K [34m[Kmsg->pose.pose.position.x[m[K + "; " msg->pose.pose.position.y);
+[3.432s]       |                                         [32m[K~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.432s]       |                                         [32m[K|[m[K                                            [34m[K|[m[K
+[3.432s]       |                                         [32m[Kconst char [17][m[K                              [34m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_x_type {aka double}[m[K
+[6.863s] gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1
+[6.863s] gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2
+[6.863s] gmake: *** [Makefile:146: all] Error 2
+[6.866s] Invoked command in '/home/user/ros2_ws/src/build/executors_exercises_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/executors_exercises_pkg -- -j8 -l8

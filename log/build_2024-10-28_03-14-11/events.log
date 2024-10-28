@@ -1,0 +1,150 @@
+[0.000000] (-) TimerEvent: {}
+[0.003063] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003137] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003192] (executors_exercises_pkg) JobQueued: {'identifier': 'executors_exercises_pkg', 'dependencies': OrderedDict()}
+[0.003230] (executors_exercises_pkg) JobStarted: {'identifier': 'executors_exercises_pkg'}
+[0.017638] (executors_exercises_pkg) JobProgress: {'identifier': 'executors_exercises_pkg', 'progress': 'cmake'}
+[0.027164] (executors_exercises_pkg) JobProgress: {'identifier': 'executors_exercises_pkg', 'progress': 'build'}
+[0.029304] (executors_exercises_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_ws/src/build/executors_exercises_pkg', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_ws/src/build/executors_exercises_pkg', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://1_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '1_xterm'), ('PWD', '/home/user/ros2_ws/src/build/executors_exercises_pkg'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('LANG', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/box_bot_tutorials:/home/simulations/ros2_sims_ws/install/box_bot_gazebo:/home/simulations/ros2_sims_ws/install/box_bot_description:/home/simulations/ros2_sims_ws/install/animated_actors:/home/user/ros2_ws/install/my_package:/home/user/ros2_ws/install/executors_exercises_pkg:/opt/ros/humble'), ('CMAKE_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/box_bot_tutorials:/home/simulations/ros2_sims_ws/install/box_bot_gazebo:/home/simulations/ros2_sims_ws/install/box_bot_description:/home/simulations/ros2_sims_ws/install/animated_actors:/home/user/ros2_ws/install/my_package:/home/user/ros2_ws/install/executors_exercises_pkg:/opt/ros/humble'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '1_xterm'), ('_colcon_cd_root', '/home/user/ros2_ws'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://1_xterm:11311'), ('ROS_HOSTNAME', '1_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '0'), ('SLOT_PREFIX', '915a92a9-c935-4dfa-a469-e5cedb162867'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25156'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin'), ('SELECTED_ROS_DISTRO', 'humble'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin'), ('NODE_VERSION', 'v8.17.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'humble'), ('GAZEBO_VERBOSE', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros2_ws'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20001'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.096102] (-) TimerEvent: {}
+[0.149213] (executors_exercises_pkg) StdoutLine: {'line': b'[ 10%] Built target executor_example_2_node\n'}
+[0.152767] (executors_exercises_pkg) StdoutLine: {'line': b'[ 20%] Built target executor_example_1_node\n'}
+[0.153168] (executors_exercises_pkg) StdoutLine: {'line': b'[ 30%] Built target executor_example_3_node\n'}
+[0.153362] (executors_exercises_pkg) StdoutLine: {'line': b'[ 40%] Built target executor_example_4_node\n'}
+[0.161040] (executors_exercises_pkg) StdoutLine: {'line': b'[ 50%] Built target executor_example_4_singlethreaded_node\n'}
+[0.163273] (executors_exercises_pkg) StdoutLine: {'line': b'[ 60%] Built target executor_example_5_node\n'}
+[0.168362] (executors_exercises_pkg) StdoutLine: {'line': b'[ 70%] Built target executor_example_5_reentrant_node\n'}
+[0.171996] (executors_exercises_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target bot_node\x1b[0m\n'}
+[0.196214] (-) TimerEvent: {}
+[0.203293] (executors_exercises_pkg) StdoutLine: {'line': b'[ 80%] Built target executor_example_5_mutualyexclusive_multiple_node\n'}
+[0.207920] (executors_exercises_pkg) StdoutLine: {'line': b'[ 90%] Built target executor_example_5_mutualyexclusive_node\n'}
+[0.211945] (executors_exercises_pkg) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o\x1b[0m\n'}
+[0.296343] (-) TimerEvent: {}
+[0.396721] (-) TimerEvent: {}
+[0.497689] (-) TimerEvent: {}
+[0.598015] (-) TimerEvent: {}
+[0.698929] (-) TimerEvent: {}
+[0.799938] (-) TimerEvent: {}
+[0.900310] (-) TimerEvent: {}
+[1.000694] (-) TimerEvent: {}
+[1.101886] (-) TimerEvent: {}
+[1.202295] (-) TimerEvent: {}
+[1.302646] (-) TimerEvent: {}
+[1.403044] (-) TimerEvent: {}
+[1.503378] (-) TimerEvent: {}
+[1.603752] (-) TimerEvent: {}
+[1.704719] (-) TimerEvent: {}
+[1.805657] (-) TimerEvent: {}
+[1.906713] (-) TimerEvent: {}
+[2.009894] (-) TimerEvent: {}
+[2.110300] (-) TimerEvent: {}
+[2.210716] (-) TimerEvent: {}
+[2.311158] (-) TimerEvent: {}
+[2.411576] (-) TimerEvent: {}
+[2.512276] (-) TimerEvent: {}
+[2.612613] (-) TimerEvent: {}
+[2.712982] (-) TimerEvent: {}
+[2.813385] (-) TimerEvent: {}
+[2.913702] (-) TimerEvent: {}
+[3.014120] (-) TimerEvent: {}
+[3.114528] (-) TimerEvent: {}
+[3.214887] (-) TimerEvent: {}
+[3.315281] (-) TimerEvent: {}
+[3.415684] (-) TimerEvent: {}
+[3.515989] (-) TimerEvent: {}
+[3.560643] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:38:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected '\x1b[01m\x1b[K;\x1b[m\x1b[K' after class definition\n"}
+[3.560873] (executors_exercises_pkg) StderrLine: {'line': b'   38 | }\n'}
+[3.561026] (executors_exercises_pkg) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.561152] (executors_exercises_pkg) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[3.577877] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:\x1b[m\x1b[K In constructor '\x1b[01m\x1b[KBotNode::BotNode(float)\x1b[m\x1b[K':\n"}
+[3.578070] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:12:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kodom1_callback_group_\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[Kcreate_callback_group\x1b[m\x1b[K'?\n"}
+[3.578145] (executors_exercises_pkg) StderrLine: {'line': b'   12 |         \x1b[01;31m\x1b[Kodom1_callback_group_\x1b[m\x1b[K = this->create_callback_group(\n'}
+[3.578217] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.578282] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kcreate_callback_group\x1b[m\x1b[K\n'}
+[3.588579] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:19:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Ksubscription1_\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[Krmw_subscriptions_t\x1b[m\x1b[K'?\n"}
+[3.588769] (executors_exercises_pkg) StderrLine: {'line': b'   19 |         \x1b[01;31m\x1b[Ksubscription1_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::Odometry>(\n'}
+[3.588857] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.588938] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_subscriptions_t\x1b[m\x1b[K\n'}
+[3.616099] (-) TimerEvent: {}
+[3.658777] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Ktimer1\x1b[m\x1b[K' was not declared in this scope; did you mean '\x1b[01m\x1b[Ktimer\x1b[m\x1b[K'?\n"}
+[3.659144] (executors_exercises_pkg) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[Ktimer1\x1b[m\x1b[K = this->create_wall_timer(\n'}
+[3.659305] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.659431] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktimer\x1b[m\x1b[K\n'}
+[3.659602] (executors_exercises_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[3.659796] (executors_exercises_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[3.659861] (executors_exercises_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[3.659923] (executors_exercises_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.659982] (executors_exercises_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:1\x1b[m\x1b[K:\n'}
+[3.660043] (executors_exercises_pkg) StderrLine: {'line': b"/usr/include/c++/11/functional: In instantiation of '\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >), BotNode*>\x1b[m\x1b[K':\n"}
+[3.660114] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/usr/include/c++/11/functional:768:12:\x1b[m\x1b[K   required from '\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >), BotNode*>\x1b[m\x1b[K'\n"}
+[3.660175] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/usr/include/c++/11/functional:789:5:\x1b[m\x1b[K   required by substitution of '\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >); _BoundArgs = {BotNode*}]\x1b[m\x1b[K'\n"}
+[3.660241] (executors_exercises_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:25:35:\x1b[m\x1b[K   required from here\n'}
+[3.660307] (executors_exercises_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[3.660368] (executors_exercises_pkg) StderrLine: {'line': b'  755 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[3.660428] (executors_exercises_pkg) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[3.660487] (executors_exercises_pkg) StderrLine: {'line': b'  756 | \x1b[01;31m\x1b[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[3.660558] (executors_exercises_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.660624] (executors_exercises_pkg) StderrLine: {'line': b'  757 | \x1b[01;31m\x1b[K                    : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[3.660691] (executors_exercises_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.660752] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K'\x1b[01m\x1b[K(false ? (1 >= (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)) : (1 == (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)))\x1b[m\x1b[K' evaluates to false\n"}
+[3.662005] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:24:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to '\x1b[01m\x1b[KBotNode::create_wall_timer(float&, std::_Bind_helper<false, void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >), BotNode*>::type)\x1b[m\x1b[K'\n"}
+[3.662171] (executors_exercises_pkg) StderrLine: {'line': b'   24 |         timer1 = \x1b[01;31m\x1b[Kthis->create_wall_timer(\x1b[m\x1b[K\n'}
+[3.662235] (executors_exercises_pkg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.662294] (executors_exercises_pkg) StderrLine: {'line': b'   25 | \x1b[01;31m\x1b[K        this->wait_time, std::bind(&BotNode::bot1_callback, this))\x1b[m\x1b[K;\n'}
+[3.662352] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.662410] (executors_exercises_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:2\x1b[m\x1b[K:\n'}
+[3.662470] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: '\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K'\n"}
+[3.662555] (executors_exercises_pkg) StderrLine: {'line': b'  238 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[3.662615] (executors_exercises_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.662674] (executors_exercises_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.662767] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:24:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types '\x1b[01m\x1b[Kstd::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K' and '\x1b[01m\x1b[Kfloat\x1b[m\x1b[K'\n"}
+[3.662833] (executors_exercises_pkg) StderrLine: {'line': b'   24 |         timer1 = \x1b[01;36m\x1b[Kthis->create_wall_timer(\x1b[m\x1b[K\n'}
+[3.662907] (executors_exercises_pkg) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.662967] (executors_exercises_pkg) StderrLine: {'line': b'   25 | \x1b[01;36m\x1b[K        this->wait_time, std::bind(&BotNode::bot1_callback, this))\x1b[m\x1b[K;\n'}
+[3.663027] (executors_exercises_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.666213] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:\x1b[m\x1b[K In member function '\x1b[01m\x1b[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K':\n"}
+[3.666356] (executors_exercises_pkg) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:30:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter '\x1b[01m\x1b[Kmsg\x1b[m\x1b[K' [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[3.666430] (executors_exercises_pkg) StderrLine: {'line': b'   30 |     void bot1_callback(\x1b[01;35m\x1b[Kconst nav_msgs::msg::Odometry::SharedPtr msg\x1b[m\x1b[K){\n'}
+[3.666493] (executors_exercises_pkg) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.716220] (-) TimerEvent: {}
+[3.816588] (-) TimerEvent: {}
+[3.916943] (-) TimerEvent: {}
+[4.017256] (-) TimerEvent: {}
+[4.117576] (-) TimerEvent: {}
+[4.218380] (-) TimerEvent: {}
+[4.318796] (-) TimerEvent: {}
+[4.423103] (-) TimerEvent: {}
+[4.523940] (-) TimerEvent: {}
+[4.624316] (-) TimerEvent: {}
+[4.724689] (-) TimerEvent: {}
+[4.825068] (-) TimerEvent: {}
+[4.925447] (-) TimerEvent: {}
+[5.025865] (-) TimerEvent: {}
+[5.126238] (-) TimerEvent: {}
+[5.227175] (-) TimerEvent: {}
+[5.327572] (-) TimerEvent: {}
+[5.427950] (-) TimerEvent: {}
+[5.528274] (-) TimerEvent: {}
+[5.628647] (-) TimerEvent: {}
+[5.729047] (-) TimerEvent: {}
+[5.829459] (-) TimerEvent: {}
+[5.929864] (-) TimerEvent: {}
+[6.030272] (-) TimerEvent: {}
+[6.130629] (-) TimerEvent: {}
+[6.230955] (-) TimerEvent: {}
+[6.331340] (-) TimerEvent: {}
+[6.431717] (-) TimerEvent: {}
+[6.532038] (-) TimerEvent: {}
+[6.632384] (-) TimerEvent: {}
+[6.732697] (-) TimerEvent: {}
+[6.833581] (-) TimerEvent: {}
+[6.934476] (-) TimerEvent: {}
+[7.034889] (-) TimerEvent: {}
+[7.059173] (executors_exercises_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1\n'}
+[7.059467] (executors_exercises_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2\n'}
+[7.059613] (executors_exercises_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.061073] (executors_exercises_pkg) CommandEnded: {'returncode': 2}
+[7.135000] (-) TimerEvent: {}
+[7.243748] (-) TimerEvent: {}
+[7.253971] (executors_exercises_pkg) JobEnded: {'identifier': 'executors_exercises_pkg', 'rc': 2}
+[7.256341] (-) EventReactorShutdown: {}

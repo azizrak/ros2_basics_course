@@ -1,0 +1,5 @@
+[ 10%] Built target executor_example_1_node
+[ 20%] Built target executor_example_5_mutualyexclusive_node
+[ 30%] Built target executor_example_5_mutualyexclusive_multiple_node
+[35m[1mConsolidate compiler generated dependencies of target bot_node[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o[0m

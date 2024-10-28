@@ -1,0 +1,119 @@
+[0.061s] Invoking command in '/home/user/ros2_ws/src/build/executors_exercises_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/executors_exercises_pkg -- -j8 -l8
+[1.900s] [35m[1mConsolidate compiler generated dependencies of target executor_example_4_node[0m
+[1.900s] [35m[1mConsolidate compiler generated dependencies of target executor_example_1_node[0m
+[1.901s] [35m[1mConsolidate compiler generated dependencies of target executor_example_5_node[0m
+[1.915s] [35m[1mConsolidate compiler generated dependencies of target executor_example_5_reentrant_node[0m
+[1.915s] [35m[1mConsolidate compiler generated dependencies of target executor_example_2_node[0m
+[1.915s] [35m[1mConsolidate compiler generated dependencies of target executor_example_5_mutualyexclusive_node[0m
+[1.915s] [35m[1mConsolidate compiler generated dependencies of target executor_example_3_node[0m
+[1.921s] [35m[1mConsolidate compiler generated dependencies of target executor_example_4_singlethreaded_node[0m
+[2.709s] [ 20%] Built target executor_example_4_node
+[2.710s] [ 20%] Built target executor_example_5_node
+[2.710s] [ 30%] Built target executor_example_2_node
+[2.711s] [ 40%] Built target executor_example_1_node
+[2.717s] [ 50%] Built target executor_example_3_node
+[2.719s] [ 60%] Built target executor_example_4_singlethreaded_node
+[2.720s] [ 70%] Built target executor_example_5_mutualyexclusive_node
+[2.721s] [ 80%] Built target executor_example_5_reentrant_node
+[2.728s] [35m[1mConsolidate compiler generated dependencies of target executor_example_5_mutualyexclusive_multiple_node[0m
+[2.732s] [35m[1mConsolidate compiler generated dependencies of target bot_node[0m
+[2.764s] [ 90%] Built target executor_example_5_mutualyexclusive_multiple_node
+[2.771s] [ 95%] [32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o[0m
+[13.445s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:29:30:[m[K [01;31m[Kerror: [m[K'[01m[Knav_msgs[m[K' does not name a type
+[13.445s]    29 |     void bot1_callback(const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg){
+[13.445s]       |                              [01;31m[K^~~~~~~~[m[K
+[13.445s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:29:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[K::[m[K' token
+[13.445s]    29 | _callback(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg){
+[13.445s]       |                              [01;31m[K^~[m[K
+[13.446s] 
+[13.446s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:29:43:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K)[m[K' before '[01m[K::[m[K' token
+[13.446s]    29 | _callback[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOdometry::SharedPtr msg){
+[13.446s]       |          [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[13.446s]       |                              [32m[K)[m[K
+[13.446s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:29:40:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' at end of member declaration
+[13.446s]    29 | ot1_callback(const nav_msgs::[01;31m[Kmsg[m[K::Odometry::SharedPtr msg){
+[13.446s]       |                              [01;31m[K^~~[m[K
+[13.446s]       |                                 [32m[K;[m[K
+[13.449s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:29:45:[m[K [01;31m[Kerror: [m[K'[01m[KOdometry[m[K' in namespace '[01m[K::[m[K' does not name a type
+[13.449s]    29 | allback(const nav_msgs::msg::[01;31m[KOdometry[m[K::SharedPtr msg){
+[13.449s]       |                              [01;31m[K^~~~~~~~[m[K
+[13.449s] 
+[13.449s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:37:2:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' after class definition
+[13.450s]    37 | }
+[13.450s]       |  [01;31m[K^[m[K
+[13.450s]       |  [32m[K;[m[K
+[13.468s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In constructor '[01m[KBotNode::BotNode(float)[m[K':
+[13.468s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:11:9:[m[K [01;31m[Kerror: [m[K'[01m[Kodom1_callback_group_[m[K' was not declared in this scope; did you mean '[01m[Kcreate_callback_group[m[K'?
+[13.468s]    11 |         [01;31m[Kodom1_callback_group_[m[K = this->create_callback_group(
+[13.468s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[13.468s]       |         [32m[Kcreate_callback_group[m[K
+[13.476s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:18:9:[m[K [01;31m[Kerror: [m[K'[01m[Ksubscription1_[m[K' was not declared in this scope; did you mean '[01m[Krmw_subscriptions_t[m[K'?
+[13.476s]    18 |         [01;31m[Ksubscription1_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+[13.476s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[13.476s]       |         [32m[Krmw_subscriptions_t[m[K
+[13.484s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:18:52:[m[K [01;31m[Kerror: [m[K'[01m[Knav_msgs[m[K' was not declared in this scope
+[13.484s]    18 |  = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>(
+[13.484s]       |                              [01;31m[K^~~~~~~~[m[K
+[13.484s] 
+[13.484s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:18:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[13.484s]    18 |       subscription1_ = this->[01;31m[Kcreate_subscription<nav_msgs::msg::Odometry>[m[K(
+[13.485s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.485s] 
+[13.492s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:18:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[KBotNode::create_subscription<<expression error> >(const char [16], int, std::_Bind_helper<false, void (BotNode::*)(...), BotNode*, const std::_Placeholder<1>&>::type, rclcpp::SubscriptionOptions&)[m[K'
+[13.492s]    18 | [01;31m[Ke_subscription<nav_msgs::msg::Odometry>([m[K
+[13.492s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.492s] 
+[13.492s]    19 | 
+[13.492s]       |                                         
+[13.492s] 
+[13.492s]    20 | [01;31m[K_callback, this, std::placeholders::_1),[m[K
+[13.492s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.493s] 
+[13.493s]    21 | 
+[13.493s]       |                                         
+[13.493s] 
+[13.493s] In file included from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:2[m[K:
+[13.493s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K'
+[13.494s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[13.494s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[13.494s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.494s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:18:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.494s]    18 | [01;31m[Ke_subscription<nav_msgs::msg::Odometry>([m[K
+[13.494s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.495s] 
+[13.495s]    19 | 
+[13.495s]       |                                         
+[13.495s] 
+[13.495s]    20 | [01;31m[K_callback, this, std::placeholders::_1),[m[K
+[13.495s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.496s] 
+[13.496s]    21 | 
+[13.496s]       |                                         
+[13.496s] 
+[13.501s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:23:9:[m[K [01;31m[Kerror: [m[K'[01m[Ktimer1[m[K' was not declared in this scope; did you mean '[01m[Ktimer[m[K'?
+[13.501s]    23 |         [01;31m[Ktimer1[m[K = this->create_wall_timer(
+[13.501s]       |         [01;31m[K^~~~~~[m[K
+[13.501s]       |         [32m[Ktimer[m[K
+[13.505s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:23:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[KBotNode::create_wall_timer(float&, std::_Bind_helper<false, void (BotNode::*)(...), BotNode*>::type)[m[K'
+[13.505s]    23 |        timer1 = [01;31m[Kthis->create_wall_timer([m[K
+[13.505s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.505s] 
+[13.505s]    24 | [01;31m[K       this->wait_time, std::bind(&BotNode::bot1_callback, this))[m[K;
+[13.505s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.505s] 
+[13.506s] In file included from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:2[m[K:
+[13.506s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K'
+[13.506s]   238 |   [01;36m[Kcreate_wall_timer[m[K(
+[13.506s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[13.506s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.506s] [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:23:41:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K' and '[01m[Kfloat[m[K'
+[13.506s]    23 |        timer1 = [01;36m[Kthis->create_wall_timer([m[K
+[13.506s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.506s] 
+[13.506s]    24 | [01;36m[K       this->wait_time, std::bind(&BotNode::bot1_callback, this))[m[K;
+[13.506s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.506s] 
+[14.134s] gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1
+[14.151s] gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2
+[14.151s] gmake: *** [Makefile:146: all] Error 2
+[14.152s] Invoked command in '/home/user/ros2_ws/src/build/executors_exercises_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/build/executors_exercises_pkg -- -j8 -l8

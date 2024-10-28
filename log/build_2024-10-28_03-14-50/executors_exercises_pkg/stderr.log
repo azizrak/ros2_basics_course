@@ -1,0 +1,57 @@
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In constructor '[01m[KBotNode::BotNode(float)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:12:9:[m[K [01;31m[Kerror: [m[K'[01m[Kodom1_callback_group_[m[K' was not declared in this scope; did you mean '[01m[Kcreate_callback_group[m[K'?
+   12 |         [01;31m[Kodom1_callback_group_[m[K = this->create_callback_group(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kcreate_callback_group[m[K
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:19:9:[m[K [01;31m[Kerror: [m[K'[01m[Ksubscription1_[m[K' was not declared in this scope; did you mean '[01m[Krmw_subscriptions_t[m[K'?
+   19 |         [01;31m[Ksubscription1_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscriptions_t[m[K
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:24:9:[m[K [01;31m[Kerror: [m[K'[01m[Ktimer1[m[K' was not declared in this scope; did you mean '[01m[Ktimer[m[K'?
+   24 |         [01;31m[Ktimer1[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer[m[K
+In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:1[m[K:
+/usr/include/c++/11/functional: In instantiation of '[01m[Kstruct std::_Bind_check_arity<void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >), BotNode*>[m[K':
+[01m[K/usr/include/c++/11/functional:768:12:[m[K   required from '[01m[Kstruct std::_Bind_helper<false, void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >), BotNode*>[m[K'
+[01m[K/usr/include/c++/11/functional:789:5:[m[K   required by substitution of '[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >); _BoundArgs = {BotNode*}][m[K'
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:25:35:[m[K   required from here
+[01m[K/usr/include/c++/11/functional:756:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+  755 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+      |                               [01;31m[K~~~~~[m[K
+  756 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  757 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/functional:756:21:[m[K [01;36m[Knote: [m[K'[01m[K(false ? (1 >= (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)) : (1 == (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)))[m[K' evaluates to false
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:24:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[KBotNode::create_wall_timer(float&, std::_Bind_helper<false, void (BotNode::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >), BotNode*>::type)[m[K'
+   24 |        timer1 = [01;31m[Kthis->create_wall_timer([m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   25 | [01;31m[K       this->wait_time, std::bind(&BotNode::bot1_callback, this))[m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K'
+  238 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:24:41:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K' and '[01m[Kfloat[m[K'
+   24 |        timer1 = [01;36m[Kthis->create_wall_timer([m[K
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   25 | [01;36m[K       this->wait_time, std::bind(&BotNode::bot1_callback, this))[m[K;
+      |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In member function '[01m[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:30:65:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kmsg[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 | [01;35m[Knav_msgs::msg::Odometry::SharedPtr msg[m[K){
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

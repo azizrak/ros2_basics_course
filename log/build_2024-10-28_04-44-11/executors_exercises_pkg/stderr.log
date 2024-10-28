@@ -1,0 +1,13 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:1[m[K:
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In member function '[01m[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:37:60:[m[K [01;31m[Kerror: [m[Kinvalid operands of types '[01m[Kconst char [17][m[K' and '[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_x_type[m[K' {aka '[01m[Kdouble[m[K'} to binary '[01m[Koperator+[m[K'
+   37 |         RCLCPP_INFO(this->get_logger(), [32m[K"Bot 1 Position: "[m[K [01;31m[K+[m[K [34m[Kmsg->pose.pose.position.x[m[K + "; " msg->pose.pose.position.y);
+      |                                         [32m[K~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[K|[m[K                                            [34m[K|[m[K
+      |                                         [32m[Kconst char [17][m[K                              [34m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_x_type {aka double}[m[K
+gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

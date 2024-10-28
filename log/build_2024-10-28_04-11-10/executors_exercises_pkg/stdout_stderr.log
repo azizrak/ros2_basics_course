@@ -1,0 +1,37 @@
+[ 10%] Built target executor_example_1_node
+[ 20%] Built target executor_example_5_mutualyexclusive_node
+[ 30%] Built target executor_example_5_mutualyexclusive_multiple_node
+[35m[1mConsolidate compiler generated dependencies of target bot_node[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o[0m
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In constructor '[01m[KBotNode::BotNode(float)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:25:9:[m[K [01;31m[Kerror: [m[K'[01m[Ktimer1[m[K' was not declared in this scope; did you mean '[01m[Ktimer1_[m[K'?
+   25 |         [01;31m[Ktimer1[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer1_[m[K
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:25:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to '[01m[KBotNode::create_wall_timer(float&, std::_Bind_helper<false, void (BotNode::*)(), BotNode*>::type)[m[K'
+   25 |        timer1 = [01;31m[Kthis->create_wall_timer([m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   26 | [01;31m[K       this->wait_time, std::bind(&BotNode::timer1_callback, this))[m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: '[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K'
+  238 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:25:41:[m[K [01;36m[Knote: [m[K  mismatched types '[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K' and '[01m[Kfloat[m[K'
+   25 |        timer1 = [01;36m[Kthis->create_wall_timer([m[K
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   26 | [01;36m[K       this->wait_time, std::bind(&BotNode::timer1_callback, this))[m[K;
+      |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:[m[K In member function '[01m[Kvoid BotNode::bot1_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K':
+[01m[K/home/user/ros2_ws/src/executors_exercises_pkg/src/box_bot_manager.cpp:31:65:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kmsg[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   31 | [01;35m[Knav_msgs::msg::Odometry::SharedPtr msg[m[K){
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+gmake[2]: *** [CMakeFiles/bot_node.dir/build.make:76: CMakeFiles/bot_node.dir/src/box_bot_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/bot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
