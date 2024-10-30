@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(topics_quiz_pkg)
+project(topics_quiz)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -25,11 +25,11 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(obstacle_avoider_node src/obstacle_avoider.cpp)
-ament_target_libraries(obstacle_avoider_node rclcpp std_msgs nav_msgs geometry_msgs sensor_msgs)
+add_executable(topics_quiz_node src/obstacle_avoider.cpp)
+ament_target_dependencies(topics_quiz_node rclcpp std_msgs nav_msgs geometry_msgs sensor_msgs)
 
 install(TARGETS
-	obstacle_avoider_node
+	topics_quiz_node
 	DESTINATION lib/${PROJECT_NAME}
 )
 
