@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(exercise42_pkg)
+project(services_quiz)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -8,8 +8,10 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(services_quiz_srv REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(std_srvs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -23,17 +25,25 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(exercise42_node src/exercise42.cpp)
-ament_target_dependencies(exercise42_node rclcpp geometry_msgs std_srvs)
+add_executable(rotate_server_node src/services_quiz.cpp)
+ament_target_dependencies(rotate_server_node rclcpp geometry_msgs services_quiz_srv)
+
+add_executable(rotate_client_node src/services_quiz_client.cpp)
+ament_target_dependencies(rotate_client_node rclcpp services_quiz_srv)
 
 install(TARGETS
-   exercise42_node
-   DESTINATION lib/${PROJECT_NAME}
- )
+	rotate_server_node
+	DESTINATION lib/${PROJECT_NAME}/
+)
+
+install(TARGETS
+	rotate_client_node
+	DESTINATION lib/${PROJECT_NAME}/
+)
 
 install(DIRECTORY
-  launch
-  DESTINATION share/${PROJECT_NAME}/
+	launch
+	DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()

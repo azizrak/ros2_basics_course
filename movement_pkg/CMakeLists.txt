@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(exercise42_pkg)
+project(movement_pkg)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -8,8 +8,10 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(custom_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(std_srvs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -23,17 +25,17 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(exercise42_node src/exercise42.cpp)
-ament_target_dependencies(exercise42_node rclcpp geometry_msgs std_srvs)
+add_executable(movement_server_node src/movement_server.cpp)
+ament_target_dependencies(movement_server_node rclcpp geometry_msgs custom_interfaces)
 
 install(TARGETS
-   exercise42_node
-   DESTINATION lib/${PROJECT_NAME}
- )
+	movement_server_node
+	DESTINATION lib/${PROJECT_NAME}/
+)
 
 install(DIRECTORY
-  launch
-  DESTINATION share/${PROJECT_NAME}/
+	launch
+	DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()
